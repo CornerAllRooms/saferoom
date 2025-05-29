@@ -114,6 +114,12 @@
             </div>
           </form>
         </div>
+            <script>
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) e.preventDefault();
+});
+</script>
         <script> const fullnameinput = document.getElementById('fullname');
           const emailinput = document.getElementById('email');
           const messageinput = document.getElementById('message');
